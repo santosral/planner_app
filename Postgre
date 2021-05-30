@@ -1,3 +1,6 @@
 waiting for server to start....2021-05-30 18:15:35.857 PST [24045] FATAL:  lock file "postmaster.pid" already exists
 2021-05-30 18:15:35.857 PST [24045] HINT:  Is another postmaster (PID 7818) running in data directory "/home/santosral/.asdf/installs/postgres/13.3/data"?
  stopped waiting
+waiting for server to start....2021-05-30 18:36:37.291 PST [26759] FATAL:  lock file "postmaster.pid" already exists
+2021-05-30 18:36:37.291 PST [26759] HINT:  Is another postmaster (PID 25460) running in data directory "/home/santosral/.asdf/installs/postgres/13.3/data"?
+ stopped waiting

@@ -1,0 +1,7 @@
+<h1><%= @task.title %></h1>
+
+<p><%= @task.description %></p>
+
+<p>Deadline: <%= @task&.deadline&.strftime("%A, %d %B %Y") %></p>
+
+<%= link_to "Edit" , edit_category_task_path(@category, @task) %>
