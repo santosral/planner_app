@@ -1,3 +1,13 @@
-<h1>New Category</h1>
+<div class="new-category-logo">
+    <h1>New Category</h1>
+</div>
 
-<%= render "form", category: @category %>
+<div class="new-category-container">
+<div class="new-category-image">
+    <%= image_tag("ezgif.com-gif-maker.gif", :alt => "gif feed") %>
+</div>
+
+<div class="new-category-form">
+    <%= render "form", category: @category %>
+</div>
+</div>

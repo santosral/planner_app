@@ -1,0 +1,92 @@
+/* Header Height */
+.nav-container {
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #26c5da;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    margin-right: 3rem;
+  }
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.5rem;
+    right: 3rem;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  // .dropdown-content a:hover {background-color: #b262e7;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #008bfd;}
+
+  // Aliging menu items
+  .vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vertical-align:hover {
+    background-color: #e1cfec;
+    border-radius: 0.5rem;
+  }
+
+  // aligning add button
+  .add-margin {
+    margin-left: 0.25rem;
+  }
+
+  header {
+    background: #ffffff;
+    border-bottom: 3px solid #d8d8d8;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .logo a {
+    color: #830ef1;
+  }
+
+  .logo a:hover {
+    color: #b262e7;
+  }
+
+  .category-container {
+    text-align: center;
+    margin-top: var(--header-height);
+  }

@@ -1,11 +1,14 @@
-<h1>Categories</h1>
+<div class="dashboard-center"><h1>Dashboard</h1></div>
 
-<ul>
+<div class="grid">
   <% @categories.each do |category| %>
-    <li>
-      <%= link_to category.title, category %>
-    </li>
+  <div class="hover-color">
+    <div class="category">
+      <h2><%= link_to category.title, category %></h2>
+      <div class="text-left">
+      <%= render :partial => category.tasks %>
+      </div>
+    </div>
+  </div>
   <% end %>
-</ul>
-
-<%= link_to "New Category", new_category_path %>
+</div>

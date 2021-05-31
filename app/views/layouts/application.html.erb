@@ -7,10 +7,23 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'main.css' %>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header>
+      <nav>
+        <ul class='nav-container'>
+          <li><h1 class='logo'><%= link_to "Planner", root_path %></h1></li>
+          <div class="dropdown">
+            <button class='dropbtn'><%= fa_icon('plus') %><span class='add-margin'>Add</span></button>
+            <li class='dropdown-content'><div class='vertical-align'><%= fa_icon('calendar') %><%= link_to "Category", new_category_path %></div></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>

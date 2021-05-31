@@ -5,3 +5,9 @@
 <p>Deadline: <%= @task&.deadline&.strftime("%A, %d %B %Y") %></p>
 
 <%= link_to "Edit" , edit_category_task_path(@category, @task) %>
+
+<p>
+  <%= link_to 'Delete', category_task_path(@category, @task),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>
