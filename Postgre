@@ -4,3 +4,25 @@ waiting for server to start....2021-05-30 18:15:35.857 PST [24045] FATAL:  lock 
 waiting for server to start....2021-05-30 18:36:37.291 PST [26759] FATAL:  lock file "postmaster.pid" already exists
 2021-05-30 18:36:37.291 PST [26759] HINT:  Is another postmaster (PID 25460) running in data directory "/home/santosral/.asdf/installs/postgres/13.3/data"?
  stopped waiting
+waiting for server to start....2021-06-07 19:51:50.279 PST [1986] LOG:  starting PostgreSQL 13.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2021-06-07 19:51:50.280 PST [1986] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-06-07 19:51:50.417 PST [1986] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-06-07 19:51:50.652 PST [1987] LOG:  database system was interrupted; last known up at 2021-05-31 22:14:52 PST
+...2021-06-07 19:51:53.474 PST [1987] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-06-07 19:51:53.547 PST [1987] LOG:  redo starts at 0/1C21208
+2021-06-07 19:51:53.547 PST [1987] LOG:  invalid record length at 0/1C212F0: wanted 24, got 0
+2021-06-07 19:51:53.547 PST [1987] LOG:  redo done at 0/1C212B8
+.2021-06-07 19:51:53.990 PST [1986] LOG:  database system is ready to accept connections
+ done
+server started
+waiting for server to start....2021-06-08 18:59:30.105 PST [394] LOG:  starting PostgreSQL 13.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2021-06-08 18:59:30.105 PST [394] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-06-08 18:59:30.233 PST [394] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-06-08 18:59:30.501 PST [395] LOG:  database system was interrupted; last known up at 2021-06-07 20:21:56 PST
+...2021-06-08 18:59:33.265 PST [395] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-06-08 18:59:33.336 PST [395] LOG:  redo starts at 0/1C3FDA0
+2021-06-08 18:59:33.336 PST [395] LOG:  invalid record length at 0/1C3FE88: wanted 24, got 0
+2021-06-08 18:59:33.336 PST [395] LOG:  redo done at 0/1C3FE50
+2021-06-08 18:59:33.756 PST [394] LOG:  database system is ready to accept connections
+ done
+server started

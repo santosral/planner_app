@@ -1,0 +1,45 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.home_image {
+    width: 30%;
+    margin-right: 10%;
+}
+
+.home_logo {
+    font-size: 1.5rem;
+    color: #9e1ff3;
+}
+
+// .logo_image {
+//     margin-top: 150px;
+//     margin-left: 250px;
+// }
+
+.home_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0;
+}
+
+// .login {
+//     width: ;
+// }
+
+input {
+    width: 100%;
+}
+
+.logo_text {
+    margin-left: 25%;
+    position: absolute;
+}
