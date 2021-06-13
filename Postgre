@@ -26,3 +26,68 @@ waiting for server to start....2021-06-08 18:59:30.105 PST [394] LOG:  starting 
 2021-06-08 18:59:33.756 PST [394] LOG:  database system is ready to accept connections
  done
 server started
+waiting for server to start....2021-06-13 21:50:15.823 PST [409] LOG:  starting PostgreSQL 13.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2021-06-13 21:50:15.823 PST [409] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-06-13 21:50:15.962 PST [409] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-06-13 21:50:16.297 PST [410] LOG:  database system was interrupted; last known up at 2021-06-09 20:31:33 PST
+............2021-06-13 21:50:28.369 PST [410] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-06-13 21:50:28.494 PST [410] LOG:  redo starts at 0/1C404D8
+2021-06-13 21:50:28.494 PST [410] LOG:  invalid record length at 0/1C405C0: wanted 24, got 0
+2021-06-13 21:50:28.494 PST [410] LOG:  redo done at 0/1C40588
+.2021-06-13 21:50:29.167 PST [409] LOG:  database system is ready to accept connections
+ done
+server started
+2021-06-13 22:57:04.680 PST [1629] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 22:57:04.680 PST [1629] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:02:08.590 PST [1629] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:02:08.590 PST [1629] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:03.268 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:03.268 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:04.761 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:04.761 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:05.508 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:05.508 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:06.019 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:06.019 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:06.522 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:06.522 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:06.948 PST [1629] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:06.948 PST [1629] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:07.372 PST [1920] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:07.372 PST [1920] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:07.820 PST [1921] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:07.820 PST [1921] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:08.285 PST [1922] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:08.285 PST [1922] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:08.853 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:08.853 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:09.944 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:09.944 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:10.552 PST [1922] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:10.552 PST [1922] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:09:10.559 PST [1921] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:09:10.559 PST [1921] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:10:09.492 PST [1922] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:10:09.492 PST [1922] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:10:10.013 PST [1922] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:10:10.013 PST [1922] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:10:10.531 PST [1921] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:10:10.531 PST [1921] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:10:10.934 PST [1920] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:10:10.934 PST [1920] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:10:11.360 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:10:11.360 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:10:11.543 PST [1629] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:10:11.543 PST [1629] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:11:19.712 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:11:19.712 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:11:20.128 PST [1629] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:11:20.128 PST [1629] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:11:20.551 PST [1897] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:11:20.551 PST [1897] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:11:20.994 PST [1920] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:11:20.994 PST [1920] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:11:21.471 PST [1921] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:11:21.471 PST [1921] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-13 23:11:21.493 PST [1922] ERROR:  column categories.user_id does not exist at character 47
+2021-06-13 23:11:21.493 PST [1922] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1

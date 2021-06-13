@@ -3,7 +3,7 @@ class TasksController < ApplicationController
 
     def show
         @task = @category.tasks.find(params[:id])
-      end
+    end
 
     def new
         @task = @category.tasks.build
@@ -41,6 +41,6 @@ class TasksController < ApplicationController
         end
 
         def get_category
-            @category = Category.find(params[:category_id])
+            @category = current_user.Category.find(params[:category_id])
         end
 end
