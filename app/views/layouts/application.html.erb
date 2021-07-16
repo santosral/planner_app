@@ -13,10 +13,18 @@
   </head>
 
   <body>
-    <%# Devise Flash Messages %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <% if current_page?(new_user_session_path) %>
+    <%# Flash Messages %>
+    <% if notice %>
+      <div id="notice_wrapper">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% elsif alert %>
+      <div id="notice_wrapper">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+
+    <% unless current_page?(root_path) %>
       <%= render 'shared/navbar' %>
     <% end %>
     <%= yield %>

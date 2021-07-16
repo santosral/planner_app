@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+    before_action :authenticate_user!
     before_action :get_category
 
     def show
@@ -10,12 +11,17 @@ class TasksController < ApplicationController
     end
 
     def create
-        @task = @category.tasks.create(task_params)
-        redirect_to category_path(@category)
+        @task = @category.tasks.build(task_params)
+        if @task.valid?
+            @task.save
+            redirect_to category_path(@category)
+        elsif 
+            redirect_to category_path(@category), alert: @task.errors.full_messages
+        end
     end
 
     def edit
-    @task = @category.tasks.find(params[:id])
+        @task = @category.tasks.find(params[:id])
     end
 
     def update
@@ -29,18 +35,17 @@ class TasksController < ApplicationController
     end
       
     def destroy
-        @category = Category.find(params[:category_id])
         @task = @category.tasks.find(params[:id])
         @task.destroy
         redirect_to category_path(@category)
     end
     
     private
-        def task_params
-            params.require(:task).permit(:title, :description, :deadline)
+        def get_category
+            @category = current_user.categories.find(params[:category_id])
         end
 
-        def get_category
-            @category = current_user.Category.find(params[:category_id])
+        def task_params
+            params.require(:task).permit(:category_id, :title, :description, :deadline)
         end
 end

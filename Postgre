@@ -91,3 +91,8 @@ server started
 2021-06-13 23:11:21.471 PST [1921] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
 2021-06-13 23:11:21.493 PST [1922] ERROR:  column categories.user_id does not exist at character 47
 2021-06-13 23:11:21.493 PST [1922] STATEMENT:  SELECT "categories".* FROM "categories" WHERE "categories"."user_id" = $1
+2021-06-14 05:02:22.573 PST [409] LOG:  received fast shutdown request
+2021-06-14 05:02:23.194 PST [409] LOG:  aborting any active transactions
+2021-06-14 05:02:23.199 PST [409] LOG:  background worker "logical replication launcher" (PID 416) exited with exit code 1
+2021-06-14 05:02:23.200 PST [411] LOG:  shutting down
+2021-06-14 05:02:23.567 PST [409] LOG:  database system is shut down
